@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.nicocam.nicocamapi.NicocamapiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.642 s - in com.nicocam.nicocamapi.NicocamapiApplicationTests
