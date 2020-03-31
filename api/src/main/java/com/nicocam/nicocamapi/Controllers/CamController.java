@@ -9,7 +9,6 @@ import java.io.InputStreamReader;
 @RestController
 @RequestMapping(path="/nicocam/api/cam")
 public class CamController {
-    @CrossOrigin
     @PostMapping()
     public @ResponseBody String RotateCam(@RequestParam("orientation") String orientation,
                                           @RequestParam("angle") int angle) throws IOException, InterruptedException {

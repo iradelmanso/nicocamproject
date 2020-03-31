@@ -10,28 +10,23 @@ const app = new Vue({
         rotateLeft() {
             this.action = 'Rotating left...';
 
-            /*axios({
+            axios({
                 method: 'post',
                 url: '/cam',
-                baseURL: 'http://localhost:8080/nicocam/api/',
-                headers: {'X-Requested-With': 'XMLHttpRequest'},
-                headers: {
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Methods': 'POST'
-                  },
+                baseURL: 'http://localhost:8080/nicocam/api/',                                
                 data: {
                     orientation: 0,
                     angle: 0
                 }
-              });*/
+            });
           
-            axios
+            /*axios
                .post('http://localhost:8080/nicocam/api/cam', {
-                orientation: 0,
+                orientation: '0',
                 angle: 0
                 })
                .then(response => this.resp = response.data)
-               .catch(error => console.log(error))
+               .catch(error => console.log(error))*/
         },
 
         rotateRight() {
