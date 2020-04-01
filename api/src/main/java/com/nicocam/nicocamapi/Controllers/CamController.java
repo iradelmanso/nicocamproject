@@ -10,10 +10,10 @@ import java.io.InputStreamReader;
 @RequestMapping(path="/nicocam/api/cam")
 public class CamController {
     @PostMapping()
-    public @ResponseBody String RotateCam(@RequestParam("orientation") String orientation,
+    public @ResponseBody String RotateCam(@RequestParam("orientation") int orientation,
                                           @RequestParam("angle") int angle) throws IOException, InterruptedException {
 
-        String[] cmd = {"python3", "rotate_cam.py", orientation};
+        String[] cmd = {"python3", "rotate_cam.py", String.valueOf(orientation)};
         Process p = Runtime.getRuntime().exec(cmd);
         p.waitFor();
 
